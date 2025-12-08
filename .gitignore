@@ -1,0 +1,4 @@
+# Ignore cloudflared credentials
+/cloudflared/*.json
+
+# existing ignores (if any) — add more as needed
