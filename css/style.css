@@ -1,8 +1,10 @@
 * {
+  height:100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
 :root {
@@ -14,12 +16,12 @@
   --success-color: #27ae60;
   --shadow: 0 4px 6px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
-  --bg: #f7f7f9;
-  --text:#222;
 }
-html,body{
-  height:100%; margin:0;
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+
+html,body {
+  height:100%;
+}
+
 body{
   background:var(--bg);
   color:var(--text);
