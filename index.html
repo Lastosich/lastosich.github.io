@@ -10,16 +10,64 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="container header-container">
-      <div class="logo">Logo</div>
-      <nav class="site-nav">
-      <a href="index.html" class="nav-link">Главная</a>
-      <a href="#" class="">О нас</a>
-      <a href="#" class="">Услуги</a>
-      <a href="#" class="">Контакты</a>
-    </nav>
-    <h1>Обслуживание и ремонт компьютеров</h1>
+      <div class="logo">
+        <i class="fas fa-server">WIP</i>
+        <div>
+          <h1>ServerFix</h1>
+          <p>Румонт и обслуживание IT оборудования</p>
+        </div>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars">WIP</i>
+      </button>
+
+      <nav>
+        <ul id="mainMenu">
+          <li><a href="#home" class="active">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#calculator">Калькулятор</a></li>
+          <li><a href="#request">Оставить заявку</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
+  <!-- Услуги -->
+   <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Наши услуги</h2>
+        <p>Мы предлагаем полный спектр услуг по обслуживанию и ремонту оборудования</p>
+      </div>
+
+      <div class="services">
+        <div class="services-card">
+          <div class="service-icon">
+            <i class="fas fa-server">WIP</i>
+          </div>
+          <div class="service-content">
+            <h3>обслуживание серверов</h3>
+            <ul>
+              <li>Диагностика и ремонт серверного оборудования</li>
+              <li>Замена комплектующих (блоки питания, материнские платы)</li>
+              <li>Настройка и оптимизация серверов</li>
+              <li>Резервное копирование и восстановление данных</li>
+              <li>Модернизация серверных систем</li>
+            </ul>
+            <a href="#request" class="btn btn-accent">Заказать услугу</a>
+          </div>
+        </div>
+
+        <div class="sevice-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop">WIP</i>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
   <main>
     <section>
       <h2>Наши услуги</h2>
