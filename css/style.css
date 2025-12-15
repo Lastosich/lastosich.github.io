@@ -152,6 +152,81 @@ nav a:hover, nav a.active {
 .btn-accnet:hover {
   background-color: #c0392b;
 }
+
+
+/* Стили для раздела услуг */
+.section-title {
+  text-align: center;
+  margin: 60px 0 40px;
+  color: var(--primary-color);
+}
+        
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+        
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--secondary-color);
+}
+        
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+        
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+        
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+        
+.service-icon {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 2.5rem;
+  padding: 25px;
+  text-align: center;
+}
+        
+.service-content {
+  padding: 25px;
+}
+        
+.service-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+        
+.service-content ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+        
+.service-content li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
 /* Навигация */
 .site-nav {
   display:flex;
