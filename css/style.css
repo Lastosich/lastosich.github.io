@@ -1,8 +1,21 @@
-/* Простой минимальный стиль для стартовой страницы */
-:root{
-  --bg:#f7f7f9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --success-color: #27ae60;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+  --bg: #f7f7f9;
   --text:#222;
-  --accent:#0366d6;
 }
 html,body{
   height:100%; margin:0;
