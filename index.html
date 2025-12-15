@@ -34,16 +34,25 @@
     </div>
   </header>
 
+  <!-- Главный баннер -->
+   <section class="hero" id="home">
+    <div class="container">
+        <h2>Профессиональный ремонт серверного и потребительского оборудования</h2>
+        <p>Сертифицированные специалисты, качественные комплектующие, гарантия на все виды работ. Решаем проблемы любой сложности с серверами, рабочими станциями, ноутбуками и другой IT-техникой.</p>
+        <a href="request" class="btn">Оставить заявку</a>
+    </div>
+   </section>
+
   <!-- Услуги -->
-   <section id="services">
+   <section id="service">
     <div class="container">
       <div class="section-title">
         <h2>Наши услуги</h2>
         <p>Мы предлагаем полный спектр услуг по обслуживанию и ремонту оборудования</p>
       </div>
 
-      <div class="services">
-        <div class="services-card">
+      <div class="service">
+        <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-server">WIP</i>
           </div>
@@ -64,22 +73,136 @@
           <div class="service-icon">
             <i class="fas fa-laptop">WIP</i>
           </div>
+          <div class="service-content">
+            <h3>Ремонт компьютеров и ноутбуков</h3>
+            <ul>
+                <li>Замена экранов, клавиатур, корпусов</li>
+                <li>Ремонт материнских плат и видеокарт</li>
+                <li>Чистка от пыли и замена термопасты</li>
+                <li>Восстановление данных жёстких дисков</li>
+                <li>Установка и настройка программного обеспечения</li>
+            </ul>
+            <a href="#request" class="btn btn-accent">Заказать услугу</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-netword-wired">WIP</i>
+            </div>
+            <div class="service-content">
+                <h3>Сетевое оборудование</h3>
+                <ul>
+                    <li>Ремонт и настройка маршрутизаторов, коммутаторов</li>
+                    <li>Диагностика и устранение проблем сети</li>
+                    <li>Настройка точек доступа Wi-Fi</li>
+                    <li>Монтаж и обслуживание</li>
+                    <li>Оптимизация сетевой инфраструктуры</li>
+                </ul>
+                <a href="#request">Заказать услугу</a>
+            </div>
         </div>
       </div>
     </div>
-   </section>
-  <main>
-    <section>
-      <h2>Наши услуги</h2>
-      <ul>
-        <li>Диагностика оборудования</li>
-        <li>Ремонт и замена комплектующих (жёсткие диски, ОЗУ, блоки питания)</li>
-        <li>Настройка и переустановка операционной системы</li>
-        <li>Восстановление данных</li>
-        <li>Оптимизация системы и ускорение компьютера</li>
-      </ul>
-    </section>
-  </main>
+</section>
+
+<!-- Калькулятор стоимости -->
+ <section id="calculator">
+    <div class="container">
+        <div class="section-title">
+            <h2>Калькулятор стоимости</h2>
+            <p>Рассчитайте приблизительную стоимость ремонта вашего оборудования</p>
+        </div>
+
+        <div class="calculator">
+            <h3>Расчёт стоимости ремонта</h3>
+
+            <div class="from-group">
+                <label for="deviceType">Тип оборудования:</label>
+                <select id="deviceType">
+                    <option value="server">Серверное оборудование</option>
+                    <option value="workstation">Рабочая стацния</option>
+                    <option value="laptop">Ноутбук</option>
+                    <option value="network">Сетевое оборудование</option>
+                    <option value="printer">Принтер/МФУ</option>
+                </select>
+            </div>
+
+            <div class="from-group">
+                <label for="problemType">Тип проблемы:</label>
+                <select id="problemType">
+                    <option value="diagnostics">Диагностика</option>
+                    <option value="hardware">Аппаратная проблема</option>
+                    <option value="software">Проблема с ПО</option>
+                    <option value="preventive">Профилактическое обслуживание</option>
+                    <option value="data">Восстановление данных</option>
+                </select>
+            </div>
+
+            <div class="from-group">
+                <label for="urgency">Срочность:</label>
+                <select name="urgency" id="">
+                    <option value="standart">Стандартная (3-5 дней)</option>
+                    <option value="express">Экспресс (1-2 дня)</option>
+                    <option value="urgent">Срочный (в течения дня)</option>
+                </select>
+            </div>
+            
+            <button class="btn" id="calculateBtn">рассчитать стоимость</button>
+
+            <div class="calculator-result" id="calculator-result">
+                <h4>Предварительный рассчёт:</h4>
+                <div class="result-line">
+                    <span>Тип оборудования:</span>
+                    <span id="resultDeviceType">-</span>
+                </div>
+                <div class="result-line">
+                    <span>Тип проблемы:</span>
+                    <span id="resultDeviceType">-</span>
+                </div>
+                <div class="result-line">
+                    <span>Срочность:</span>
+                    <span id="resultUrgency">-</span>
+                </div>
+                <div class="result-line">
+                    <span>Стоимость работ:</span>
+                    <span id="resultWorkCost">-</span>
+                </div>
+                <div class="result-line">
+                    <span>Стоимость запчастей (если потребуются):</span>
+                    <span id="resultPartCost">-</span>
+                </div>
+                <div class="result-line total">
+                    <span>Итого:</span>
+                    <span id="resultTotal"></span>
+                </div>
+                <p class="note">*Окончательная стоимость будет определена после диагностики оборудования</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- Форма заявки -->
+<section id="request">
+    <div class="container">
+        <div class="section-title">
+            <h2>Оставить заявку</h2>
+            <p>Заполнить форму ниже, и наш специалист свяжется с вами в течения часа</p>
+        </div>
+
+        <div class="request-from">
+            <h3>Форма заявки на ремонт</h3>
+
+            <div class="form-status" id="formStatus">WIP</div>
+
+            <form id="repairForm">
+                <div class="form-row">
+                    !!!!!
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
   <footer class="site-footer">
     <p>© 2025 Lastosich</p>
     <p>Для точной оценки стоимости и сроков оставьте заявку по телефону или на почту.</p>
