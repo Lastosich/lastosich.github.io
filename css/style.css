@@ -106,7 +106,52 @@ nav a:hover, nav a.active {
 }
 
 /* Стили для главного баннера */
+.hero {
+  background: linear-gradient(rgba(44,62,80,0.85), rgba(44,62,80,0.9)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
 
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-bottom: 0 auto 30px;
+  opacity: 0.9; 
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+}
+
+.btn-accnet:hover {
+  background-color: #c0392b;
+}
 /* Навигация */
 .site-nav {
   display:flex;
