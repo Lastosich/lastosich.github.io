@@ -1,4 +1,4 @@
-/*Сброс и базовые стили*/
+/* Сброс и базовые стили */
 * {
   height:100%;
   margin: 0;
@@ -36,10 +36,10 @@ body {
   padding: 0 20px;
 }
 
-/* Стили для шапки*/
+/* Стили для шапки */
 header {
-  max-width:900px;
-  width:100%;
+  /*max-width:900px;
+  width:100%;*/
   background-color: var(--primary-color);
   color: white;
   padding: 20px 0;
@@ -65,6 +65,47 @@ header {
   font-size: 2.5rem;
   color: var(--secondary-color);
 }
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.logo-text p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+  background-color: var(--secondary-color);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Стили для главного баннера */
 
 /* Навигация */
 .site-nav {
