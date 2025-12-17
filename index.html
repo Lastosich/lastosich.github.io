@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <!-- Шапка сайта -->
   <header class="header">
     <div class="container header-container">
@@ -176,7 +177,7 @@
                     <span>Итого:</span>
                     <span id="resultTotal"></span>
                 </div>
-                <p class="note">*Окончательная стоимость будет определена после диагностики оборудования</p>
+                <p class="note">*Окончательная стоимость будет определена после диагностики оборудования!</p>
             </div>
         </div>
     </div>
@@ -197,17 +198,72 @@
 
             <form id="repairForm">
                 <div class="form-row">
-                    !!!!!
+                  <div class="form-group">
+                    <label for="clientName">Ваше имя *</label>
+                    <input type="text" id="clientName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientPhone">Телефон *</label>
+                    <input type="text" id="clientPhone" required>
+                  </div>
                 </div>
+                
+                <div class="form-group">
+                  <label for="clientEmail">Email</label>
+                  <input type="email" id="clientEmail">
+                </div>
+
+                <div class="form-group">
+                  <label for="requestDeviceType">Тип оборудования</label>
+                  <select id="requestDeviceType">
+                    <option value="server">Сервер</option>
+                    <option value="workstation">Рабочая стацния</option>
+                    <option value="laptop">Ноутбук</option>
+                    <option value="network">Сетевое оборудование</option>
+                    <option value="other">Другое</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn">Отправить заявку</button>
             </form>
         </div>
     </div>
 </section>
-  <footer class="site-footer">
-    <p>© 2025 Lastosich</p>
-    <p>Для точной оценки стоимости и сроков оставьте заявку по телефону или на почту.</p>
-    <p>Контакты: тел. <a href="tel:+70001234567">+7 (000) 123-45-67</a> email: <a href="mailto:info@lastosich.ru">info@example.ru</a></p>
-    <p>Адрес: Москва, примерный адрес</p>
-  </footer>
+
+<!-- Подвал -->
+<footer id="contacts">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>О компании</h3>
+          <p>ServerFix - компания с ХХ-летним опытом в ремонте и оборудования серверного и потребительского IT-оборудования. Мы работаем с юридическими и физическими лицами.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt">WIP</i>г. Москва, ул. Примерная, 123</li>
+            <li><i class="fas fa-phone">WIP</i> +7 (4951) 23-45-67</li>
+            <li><i class="fas fa-envelope">WIP</i> info@serverfix.ru</li>
+            <li><i class="fas fa-clock">WIP</i> Пн-Пт: 9:00 - 20:00, Сб: 10:00 - 18:00</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>наши услуги</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-check">WIP</i>Ремонт серверов</li>
+            <li><i class="fas fa-check">WIP</i>Ремонт компьютеров и Ноутбуков</li>
+            <li><i class="fas fa-check">WIP</i>Обслуживание сетевого оборудования</li>
+            <li><i class="fas fa-check">WIP</i>Восстановление данных</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 ServerFix. Все права защищены.</p>
+      </div>
+    </div>
+</footer>
 </body>
 </html>
