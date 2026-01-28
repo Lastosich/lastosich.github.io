@@ -104,7 +104,7 @@ header {
 
 .griding {
   display: grid;
-  grid-template-columns: minmax(20px, 1fr) minmax(min-content, 1200px) minmax(20px, 1fr);
+  grid-template-columns: minmax(20px, 1fr) minmax(min-content, 0px) minmax(20px, 1fr);
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
