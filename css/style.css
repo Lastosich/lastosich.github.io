@@ -84,8 +84,7 @@ body {
 header {
   /*max-width:900px;
   width:100%;*/
-  display: grid;
-  grid-template-rows: auto;
+  grid-column: 1 / -1;
   min-height: 100vh;
   background-color: var(--primary-color);
   color: white;
