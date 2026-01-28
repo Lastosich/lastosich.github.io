@@ -9,7 +9,6 @@
 }
 
 :root {
-  --primary-color: #2c3e50;
   --primary-dark: #0d47a1;
   --primary-light: #64b5f6;
   --secondary: #43a047;
@@ -23,7 +22,8 @@
   --text-dark: #ffffff;
   --text-light: #212121;
   --text-gray: #b0b0b0;
-  
+
+  --primary-color: #2c3e50;
   --secondary-color: #3498db;
   --accent-color: #e74c3c;
   --light-color: #ecf0f1;
@@ -31,9 +31,39 @@
   --success-color: #27ae60;
   --shadow: 0 4px 6px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
+
+  /*Тени*/
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+  --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
+  --shadow-tech: 0 0 10px rgba(26,115,232,0.3);
+
+  /*Скругления*/
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /*Отступы*/
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-xl: 4rem;
+
+  /*Шрифты*/
+  --font-main: 'Inter', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
 }
 
 body {
+  display: grid;
+  grid-template-areas: "header header" "sidebar content" "footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
