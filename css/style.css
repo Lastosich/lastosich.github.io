@@ -84,6 +84,9 @@ body {
 header {
   /*max-width:900px;
   width:100%;*/
+  display: grid;
+  grid-template-rows: auto;
+  min-height: 100vh;
   background-color: var(--primary-color);
   color: white;
   padding: 20px 0;
