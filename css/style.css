@@ -3,54 +3,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
+/* CSS переменные для цветов и стилей */
 :root {
-  --primary-dark: #0d47a1;
-  --primary-light: #64b5f6;
-  --secondary: #43a047;
-  --secondary: #2e7d32;
-  --accent: #ff9800;
-  --dark: #121212;
-  --dark-light: #1e1e1e;
-  --gray: #2d2d2d;
-  --gray-light: #424242;
-  --light: #f5f5f5;
-  --text-dark: #ffffff;
-  --text-light: #212121;
-  --text-gray: #b0b0b0;
+  /* Основные цвета */
+  --primary-color: #2c3e50; /* Темно-синий для основного цвета */
+  --secondary-color: #3498db; /* Голубой для акцентов */
+  --accent-color: #e74c3c; /* Красный для акцентов */
+  --success-color: #27ae60; /* Зеленый для успешных состояний */
+  --light-color: #ecf0f1; /* Светло-серый для фона */
 
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --light-color: #ecf0f1;
-  --dark-color: #2c3e50;
-  --success-color: #27ae60;
-  --shadow: 0 4px 6px rgba(0,0,0,0.1);
-  --transition: all 0.3s ease;
+  /* Тени */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
 
-  /*Тени*/
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
-  --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
-  --shadow-tech: 0 0 10px rgba(26,115,232,0.3);
-
-  /*Скругления*/
+  /* Скругления */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /*Отступы*/
-  --space-xs: 0.5rem;
+  /* Отступы */
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-xl: 4rem;
 
-  /*Шрифты*/
-  --font-main: 'Inter', sans-serif;
-  --font-mono: 'Roboto Mono', monospace;
+  /* Переходы */
+  --transition: all 0.3s ease;
 }
 
 body {
@@ -511,58 +493,5 @@ nav a:hover, nav a.active {
   }
 }
 
-/* Навигация */
-/*.site-nav {
-  display:flex;
-  gap:12px;
-  margin-bottom:10px
-}
 
-.site-nav .nav-link {
-  color:var(--accent);
-  text-decoration:none;
-  padding:6px 8px;
-  border-radius:6px
-}
-
-.site-nav .nav-link:hover {
-  background:rgba(3,102,214,0.08)
-}
-
-header h1 {
-  margin:0 0 12px 0;
-  font-size:28px;
-  color:var(--accent)
-}
-
-main {
-  max-width:900px;
-  width:100%;
-  background:#fff;
-  padding:20px;
-  border-radius:8px;
-  box-shadow:0 1px 3px rgba(0,0,0,0.06)
-}
-
-footer {
-  margin-top:18px;color:#666;
-  font-size:14px
-}
-
-.site-footer {
-  margin-top:18px;
-  color:#666;
-  font-size:14px;
-  text-align:center
-}
-
-.site-footer a {
-  color:var(--accent);
-  text-decoration:none
-}
-
-.cta {
-  font-weight:600;
-  margin-top:12px
-}*/
 
